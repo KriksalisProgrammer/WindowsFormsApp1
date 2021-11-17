@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Models.Component
 {
-    internal class ComandCenter : IModuls
+    public class ComandCenter : IModuls
     {
         public event EventHandler UpLevel;
         public string Name { get; set; }

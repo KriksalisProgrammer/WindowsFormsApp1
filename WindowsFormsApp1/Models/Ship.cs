@@ -15,7 +15,9 @@ namespace WindowsFormsApp1.Models
         public long Energy { get; private set; }
         public int Resourse { get; private set; }
 
-        ComandCenter comand = new ComandCenter();
+        public ComandCenter comand = new ComandCenter();
+        public Corpus corpus = new Corpus();
+        public Engine engine = new Engine();
 
         public Ship()
         {

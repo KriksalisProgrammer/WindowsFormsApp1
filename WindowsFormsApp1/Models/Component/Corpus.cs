@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Models.Component
 {
-    internal class Corpus : IModuls
+    public class Corpus : IModuls
     {
         public string Name { get; set; }
         public int Protect { get; set; }
@@ -20,6 +20,22 @@ namespace WindowsFormsApp1.Models.Component
             Protect = 100;
             Level = 1;
             isBuy = false;
+        }
+        public void Upgrate()
+        {
+            if (Level == 1)
+            {
+                Price = 250;
+                Protect = 200;
+                Level = 2;
+              
+            }
+            else if (Level == 2)
+            {
+                Price = 625;
+                Protect = 300;
+                Level = 3;
+            }
         }
     }
 }

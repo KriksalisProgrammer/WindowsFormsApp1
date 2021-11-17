@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1.Models;
+using WindowsFormsApp1.Models.Component;
 
 namespace WindowsFormsApp1.VIew
 {
@@ -25,10 +26,11 @@ namespace WindowsFormsApp1.VIew
         }
         private void populateItems()
         {
-            List<FormComponent> listModuls = new List<FormComponent>();
-            for(var i=0;i<10;i++)
-            {
 
+            FormComponent[] formComponents = new FormComponent[10];
+            for(var i=0;i<Moduls.listModuls.Count;i++)
+            {
+                formComponents[i].Name=Moduls.listModuls[i].
             }
         }
     }

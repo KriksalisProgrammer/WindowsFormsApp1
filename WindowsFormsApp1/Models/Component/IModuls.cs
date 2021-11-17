@@ -13,7 +13,7 @@ namespace WindowsFormsApp1.Models.Component
         int Price { get; set; }
         int Level { get; set; }
         bool isBuy { get; set; }
-       
+        void Upgrate();
 
     }
 }
