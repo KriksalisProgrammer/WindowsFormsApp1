@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace WindowsFormsApp1.Models.Component
         public int Price { get; set; }
         public int Level { get; set; }
         public bool isBuy { get; set; }
+        public Image ImageModuls { get; set; }
 
         private int _limCorpus;
         

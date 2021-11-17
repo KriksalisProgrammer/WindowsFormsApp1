@@ -81,6 +81,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="VIew\FormComponent.resx">
       <DependentUpon>FormComponent.cs</DependentUpon>
@@ -101,6 +102,21 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resourse\Image\Acum.jpg" />
+    <Content Include="Resourse\Image\Collector.jpg" />
+    <Content Include="Resourse\Image\Command-Center.jpg" />
+    <Content Include="Resourse\Image\Converter.jpg" />
+    <Content Include="Resourse\Image\Corpus.jpg" />
+    <Content Include="Resourse\Image\CosmicStation.png" />
+    <Content Include="Resourse\Image\Energy.jpg" />
+    <Content Include="Resourse\Image\Generator.jpg" />
+    <Content Include="Resourse\Image\Mineral.jpg" />
+    <Content Include="Resourse\Image\Planet.png" />
+    <Content Include="Resourse\Image\PlayerShip.png" />
+    <Content Include="Resourse\Image\Remont.png" />
+    <Content Include="Resourse\Image\Storage.jpg" />
+    <Content Include="Resourse\Image\Сannon.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -9,13 +9,14 @@ namespace WindowsFormsApp1.Models.Component
 {
     static class Moduls
     {
-        static Ship ship = new Ship();
-        public static ArrayList listModuls = new ArrayList();
+        private static Ship _ship = new Ship();
+        public static List<IModuls> moduls = new List<IModuls>();
+        
         static Moduls()
         {
-            listModuls.Add(ship.comand);
-            listModuls.Add(ship.corpus);
-            listModuls.Add(ship.engine);
+            moduls.Add(_ship.comand);
+            moduls.Add(_ship.corpus);
+            moduls.Add(_ship.engine);
         }
     }
 }

@@ -15,11 +15,11 @@ namespace WindowsFormsApp1.VIew
         [Category("Custom Props")]
         public string Level { get { return Level; } set { labelLavel.Text = value; } }
         [Category("Custom Props")]
-        public string Name { get; set; }
+        public string Name { get { return Name; } set { labelNameComponent.Text = value; } }
         [Category("Custom Props")]
-        public string Price { get; set; }
+        public string Price { get { return Price; } set { buttonBuy.Text = value; } }
         [Category("Custom Props")]
-        public string PriceNextLevel { get; set; }
+        public string PriceNextLevel { get { return PriceNextLevel; } set { buttonUpgrate.Text = value; } }
 
         public FormComponent()
         {

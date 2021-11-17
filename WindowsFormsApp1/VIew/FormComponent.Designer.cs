@@ -40,7 +40,7 @@
             // 
             this.labelNameComponent.AutoSize = true;
             this.labelNameComponent.Font = new System.Drawing.Font("Sitka Heading", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNameComponent.Location = new System.Drawing.Point(47, 158);
+            this.labelNameComponent.Location = new System.Drawing.Point(3, 158);
             this.labelNameComponent.Name = "labelNameComponent";
             this.labelNameComponent.Size = new System.Drawing.Size(106, 28);
             this.labelNameComponent.TabIndex = 0;
@@ -58,7 +58,7 @@
             // 
             this.labelLavel.AutoSize = true;
             this.labelLavel.Font = new System.Drawing.Font("Sitka Heading", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLavel.Location = new System.Drawing.Point(62, 189);
+            this.labelLavel.Location = new System.Drawing.Point(3, 189);
             this.labelLavel.Name = "labelLavel";
             this.labelLavel.Size = new System.Drawing.Size(79, 28);
             this.labelLavel.TabIndex = 3;
