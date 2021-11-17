@@ -28,59 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.NameComponent = new System.Windows.Forms.Label();
+            this.labelNameComponent = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.labelPrice = new System.Windows.Forms.Label();
             this.labelLavel = new System.Windows.Forms.Label();
             this.buttonBuy = new System.Windows.Forms.Button();
             this.buttonUpgrate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // NameComponent
+            // labelNameComponent
             // 
-            this.NameComponent.AutoSize = true;
-            this.NameComponent.Font = new System.Drawing.Font("Sitka Heading", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameComponent.Location = new System.Drawing.Point(3, 189);
-            this.NameComponent.Name = "NameComponent";
-            this.NameComponent.Size = new System.Drawing.Size(106, 28);
-            this.NameComponent.TabIndex = 0;
-            this.NameComponent.Text = "Компонент";
+            this.labelNameComponent.AutoSize = true;
+            this.labelNameComponent.Font = new System.Drawing.Font("Sitka Heading", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNameComponent.Location = new System.Drawing.Point(47, 158);
+            this.labelNameComponent.Name = "labelNameComponent";
+            this.labelNameComponent.Size = new System.Drawing.Size(106, 28);
+            this.labelNameComponent.TabIndex = 0;
+            this.labelNameComponent.Text = "Компонент";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(325, 183);
+            this.pictureBox1.Size = new System.Drawing.Size(191, 152);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // labelPrice
-            // 
-            this.labelPrice.AutoSize = true;
-            this.labelPrice.Font = new System.Drawing.Font("Sitka Heading", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPrice.Location = new System.Drawing.Point(257, 189);
-            this.labelPrice.Name = "labelPrice";
-            this.labelPrice.Size = new System.Drawing.Size(54, 28);
-            this.labelPrice.TabIndex = 2;
-            this.labelPrice.Text = "Цена";
             // 
             // labelLavel
             // 
             this.labelLavel.AutoSize = true;
             this.labelLavel.Font = new System.Drawing.Font("Sitka Heading", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLavel.Location = new System.Drawing.Point(147, 189);
+            this.labelLavel.Location = new System.Drawing.Point(62, 189);
             this.labelLavel.Name = "labelLavel";
             this.labelLavel.Size = new System.Drawing.Size(79, 28);
             this.labelLavel.TabIndex = 3;
             this.labelLavel.Text = "Уровень";
+            this.labelLavel.Click += new System.EventHandler(this.labelLavel_Click);
             // 
             // buttonBuy
             // 
             this.buttonBuy.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonBuy.Location = new System.Drawing.Point(0, 229);
+            this.buttonBuy.Location = new System.Drawing.Point(0, 220);
             this.buttonBuy.Name = "buttonBuy";
-            this.buttonBuy.Size = new System.Drawing.Size(331, 36);
+            this.buttonBuy.Size = new System.Drawing.Size(197, 37);
             this.buttonBuy.TabIndex = 4;
             this.buttonBuy.Text = "Купить";
             this.buttonBuy.UseVisualStyleBackColor = true;
@@ -88,10 +78,11 @@
             // 
             // buttonUpgrate
             // 
+            this.buttonUpgrate.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonUpgrate.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonUpgrate.Location = new System.Drawing.Point(0, 271);
+            this.buttonUpgrate.Location = new System.Drawing.Point(0, 260);
             this.buttonUpgrate.Name = "buttonUpgrate";
-            this.buttonUpgrate.Size = new System.Drawing.Size(331, 36);
+            this.buttonUpgrate.Size = new System.Drawing.Size(196, 36);
             this.buttonUpgrate.TabIndex = 5;
             this.buttonUpgrate.Text = "Улучшить";
             this.buttonUpgrate.UseVisualStyleBackColor = true;
@@ -101,14 +92,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.buttonUpgrate);
             this.Controls.Add(this.buttonBuy);
             this.Controls.Add(this.labelLavel);
-            this.Controls.Add(this.labelPrice);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.NameComponent);
+            this.Controls.Add(this.labelNameComponent);
             this.Name = "FormComponent";
-            this.Size = new System.Drawing.Size(331, 314);
+            this.Size = new System.Drawing.Size(196, 296);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -117,9 +108,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label NameComponent;
+        private System.Windows.Forms.Label labelNameComponent;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label labelPrice;
         private System.Windows.Forms.Label labelLavel;
         private System.Windows.Forms.Button buttonBuy;
         private System.Windows.Forms.Button buttonUpgrate;

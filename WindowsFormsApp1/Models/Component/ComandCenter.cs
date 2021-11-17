@@ -9,6 +9,7 @@ namespace WindowsFormsApp1.Models.Component
     internal class ComandCenter : IModuls
     {
         public event EventHandler UpLevel;
+        public string Name { get; set; }
         public int Protect { get; set; }
         public int Price { get; set; }
         public int Level { get; set; }
@@ -18,12 +19,12 @@ namespace WindowsFormsApp1.Models.Component
         
         public ComandCenter()
         {
+            Name = "Командный центр";
             Price = 100;
             Protect = 10;
             Level = 1;
             _limCorpus = 4;
             isBuy = false;
-
         }
 
         public void Upgrate()
