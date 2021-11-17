@@ -68,9 +68,9 @@
             // buttonBuy
             // 
             this.buttonBuy.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonBuy.Location = new System.Drawing.Point(0, 220);
+            this.buttonBuy.Location = new System.Drawing.Point(3, 220);
             this.buttonBuy.Name = "buttonBuy";
-            this.buttonBuy.Size = new System.Drawing.Size(197, 37);
+            this.buttonBuy.Size = new System.Drawing.Size(190, 37);
             this.buttonBuy.TabIndex = 4;
             this.buttonBuy.Text = "Купить";
             this.buttonBuy.UseVisualStyleBackColor = true;

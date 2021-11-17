@@ -19,6 +19,7 @@ namespace WindowsFormsApp1.VIew
         {
             InitializeComponent();
             Init();
+            populateItems();
         }
         private void Init()
         {
@@ -26,11 +27,15 @@ namespace WindowsFormsApp1.VIew
         }
         private void populateItems()
         {
-
             FormComponent[] formComponents = new FormComponent[10];
-            for(var i=0;i<Moduls.listModuls.Count;i++)
+            for(var i=0;i<formComponents.Length;i++)
             {
-                formComponents[i].Name=Moduls.listModuls[i].
+                formComponents[i] = new FormComponent();
+                formComponents[i].Name = "Имя";
+                formComponents[i].Level = "1";
+                formComponents[i].Price = "1000";
+                formComponents[i].PriceNextLevel = "2000";
+                flowLayoutPanel1.Controls.Add(formComponents[i]);
             }
         }
     }

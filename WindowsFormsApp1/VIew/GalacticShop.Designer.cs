@@ -60,7 +60,7 @@
             this.flowLayoutPanel1.Controls.Add(this.formComponent1);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 45);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(965, 581);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1063, 645);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // formComponent1
@@ -75,7 +75,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(993, 638);
+            this.ClientSize = new System.Drawing.Size(1091, 702);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.labelMoney);
             this.Controls.Add(this.label1);
