@@ -28,7 +28,7 @@ namespace WindowsFormsApp1.VIew
         private void populateItems()
         {
             flowLayoutPanel1.Controls.Clear();
-            FormComponent[] formComponents = new FormComponent[3];
+            FormComponent[] formComponents = new FormComponent[10];
             for(var i=0;i<Moduls.moduls.Count;i++)
             {
                 formComponents[i] = new FormComponent();

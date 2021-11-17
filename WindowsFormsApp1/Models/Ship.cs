@@ -18,6 +18,10 @@ namespace WindowsFormsApp1.Models
         public ComandCenter comand = new ComandCenter();
         public Corpus corpus = new Corpus();
         public Engine engine = new Engine();
+        public AKB aKB = new AKB();
+        public Cannon cannon = new Cannon();
+        public Collector collector = new Collector();
+        public Store store = new Store();
 
         public Ship()
         {

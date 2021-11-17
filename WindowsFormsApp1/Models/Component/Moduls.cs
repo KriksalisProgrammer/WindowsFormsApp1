@@ -17,6 +17,10 @@ namespace WindowsFormsApp1.Models.Component
             moduls.Add(_ship.comand);
             moduls.Add(_ship.corpus);
             moduls.Add(_ship.engine);
+            moduls.Add(_ship.aKB);
+            moduls.Add(_ship.cannon);
+            moduls.Add(_ship.collector);
+            moduls.Add(_ship.store);
         }
     }
 }
