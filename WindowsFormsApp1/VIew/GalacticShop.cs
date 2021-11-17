@@ -27,10 +27,12 @@ namespace WindowsFormsApp1.VIew
         }
         private void populateItems()
         {
+            flowLayoutPanel1.Controls.Clear();
             FormComponent[] formComponents = new FormComponent[3];
-            for(var i=0;i<formComponents.Length;i++)
+            for(var i=0;i<Moduls.moduls.Count;i++)
             {
                 formComponents[i] = new FormComponent();
+                formComponents[i].ImageModuls = Moduls.moduls[i].ImageModuls;
                 formComponents[i].Name = Moduls.moduls[i].Name;
                 formComponents[i].Level =Moduls.moduls[i].Level.ToString();
                 formComponents[i].Price = Moduls.moduls[i].Price.ToString();

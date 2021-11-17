@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Models.Component
 {
-    public class Corpus : IModuls
+    public class Collector : IModuls
     {
         public string Name { get; set; }
         public int Protect { get; set; }
@@ -15,30 +15,34 @@ namespace WindowsFormsApp1.Models.Component
         public int Level { get; set; }
         public bool isBuy { get; set; }
         public Image ImageModuls { get; set; }
-
-        public Corpus()
+        public int Collect { get; private set; }
+        public Collector()
         {
-            Name = "Корпус";
-            Price = 100;
-            Protect = 100;
+            Name = "Колектор";
+            Price = 75;
+            Protect = 10;
             Level = 1;
             isBuy = false;
-            ImageModuls = Properties.Resources.Corpus;
+            ImageModuls = Properties.Resources.Collector;
+            Collect = 20;
+
         }
+
         public void Upgrate()
         {
             if (Level == 1)
             {
-                Price = 250;
-                Protect = 200;
+                Price = 131;
+                Protect = 12;
                 Level = 2;
-              
+                Collect = 30;
             }
             else if (Level == 2)
             {
-                Price = 625;
-                Protect = 300;
+                Price = 230;
+                Protect = 15;
                 Level = 3;
+                Collect = 40;
             }
         }
     }

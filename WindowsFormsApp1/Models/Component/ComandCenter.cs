@@ -27,6 +27,7 @@ namespace WindowsFormsApp1.Models.Component
             Level = 1;
             _limCorpus = 4;
             isBuy = false;
+            ImageModuls = Properties.Resources.Command_Center;
         }
 
         public void Upgrate()

@@ -13,6 +13,8 @@ namespace WindowsFormsApp1.VIew
     public partial class FormComponent : UserControl
     {
         [Category("Custom Props")]
+        public Image ImageModuls { get { return ImageModuls; } set { pictureBox1.Image = value; } }
+        [Category("Custom Props")]
         public string Level { get { return Level; } set { labelLavel.Text = value; } }
         [Category("Custom Props")]
         public string Name { get { return Name; } set { labelNameComponent.Text = value; } }
@@ -24,6 +26,7 @@ namespace WindowsFormsApp1.VIew
         public FormComponent()
         {
             InitializeComponent();
+            
         }
 
        

@@ -52,11 +52,15 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Component\AKB.cs" />
+    <Compile Include="Models\Component\Cannon.cs" />
+    <Compile Include="Models\Component\Collector.cs" />
     <Compile Include="Models\Component\ComandCenter.cs" />
     <Compile Include="Models\Component\Corpus.cs" />
     <Compile Include="Models\Component\Engine.cs" />
     <Compile Include="Models\Component\IModuls.cs" />
     <Compile Include="Models\Component\Moduls.cs" />
+    <Compile Include="Models\Component\Store.cs" />
     <Compile Include="Models\Component\Upgrate.cs" />
     <Compile Include="Models\Ship.cs" />
     <Compile Include="Program.cs" />

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,7 +17,8 @@ namespace WindowsFormsApp1.Models.Component
         public bool isBuy { get; set; }
         public int EnergyConsMap { get; private set; }
         public int EnergyConsBattle { get; private set; }
-        
+        public Image ImageModuls { get; set; }
+
         public Engine()
         {
             Name = "Двигатель";
@@ -26,6 +28,7 @@ namespace WindowsFormsApp1.Models.Component
             isBuy = false;
             EnergyConsMap = 50000000;
             EnergyConsBattle = 1000000;
+            ImageModuls = Properties.Resources.Generator;
         }
 
         public void Upgrate()
