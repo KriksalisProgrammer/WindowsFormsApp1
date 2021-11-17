@@ -13,7 +13,7 @@ namespace WindowsFormsApp1.VIew
     public partial class FormComponent : UserControl
     {
         [Category("Custom Props")]
-        public string Level { get; set; }
+        public string Level { get { return Level; } set { labelLavel.Text = value; } }
         [Category("Custom Props")]
         public string Name { get; set; }
         [Category("Custom Props")]
@@ -24,16 +24,9 @@ namespace WindowsFormsApp1.VIew
         public FormComponent()
         {
             InitializeComponent();
-            Init();
         }
 
-        public void Init()
-        {
-            labelLavel.Text = Level;
-            labelNameComponent.Text=Name;
-            buttonBuy.Text = "Купить" + Price;
-            buttonUpgrate.Text = "Улучшить" + PriceNextLevel;
-        }
+       
         private void buttonBuy_Click(object sender, EventArgs e)
         {
 

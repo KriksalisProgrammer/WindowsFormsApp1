@@ -35,6 +35,11 @@ namespace WindowsFormsApp1.VIew
                 formComponents[i].Level = "1";
                 formComponents[i].Price = "1000";
                 formComponents[i].PriceNextLevel = "2000";
+                if(flowLayoutPanel1.Controls.Count<0)
+                {
+                    flowLayoutPanel1.Controls.Clear();
+                }
+                else
                 flowLayoutPanel1.Controls.Add(formComponents[i]);
             }
         }
