@@ -9,7 +9,8 @@ namespace WindowsFormsApp1.Models.Component
 {
     public class ComandCenter : IModuls
     {
-        public event EventHandler UpLevel;
+        public event EventHandler isBuyEvent;
+
         public string Name { get; set; }
         public int Protect { get; set; }
         public int Price { get; set; }

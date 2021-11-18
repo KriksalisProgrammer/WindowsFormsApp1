@@ -25,6 +25,9 @@ namespace WindowsFormsApp1.Models.Component
             isBuy = false;
             ImageModuls = Properties.Resources.Сannon;
         }
+
+        public event EventHandler isBuyEvent;
+
         public void Upgrate()
         {
             if (Level == 1)

@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WindowsFormsApp1.Models.Component
 {
@@ -16,6 +17,8 @@ namespace WindowsFormsApp1.Models.Component
         public bool isBuy { get; set; }
         public Image ImageModuls { get; set; }
         public long MaxEnergy { get; private set; }
+
+        public event EventHandler isBuyEvent;
         public AKB()
         {
             Name = "Акумулятор";
@@ -26,6 +29,10 @@ namespace WindowsFormsApp1.Models.Component
             ImageModuls = Properties.Resources.Acum;
             MaxEnergy = 1000000000000;
         }
+       
+
+        
+
         public void Upgrate()
         {
             if (Level == 1)

@@ -9,11 +9,10 @@ namespace WindowsFormsApp1.Models
 {
     public class Ship
     {
-        public int Money { get;private set;}
+        
         public int Strength { get; private set; }
         public int Damage { get; private set; }
-        public long Energy { get; private set; }
-        public int Resourse { get; private set; }
+        
 
         public ComandCenter comand = new ComandCenter();
         public Corpus corpus = new Corpus();
@@ -25,8 +24,7 @@ namespace WindowsFormsApp1.Models
 
         public Ship()
         {
-            Money = 2500;
-            Energy = 500000000000;
+            
         }
     }
 }

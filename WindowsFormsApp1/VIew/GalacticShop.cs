@@ -15,15 +15,17 @@ namespace WindowsFormsApp1.VIew
     public partial class GalacticShop : Form
     {
         Ship ship = new Ship();
+        BuyControler controler = new BuyControler();
         public GalacticShop()
         {
             InitializeComponent();
             Init();
             populateItems();
+           
         }
-        private void Init()
+        public void Init()
         {
-            labelMoney.Text = ship.Money.ToString();
+            labelMoney.Text = Resourse.Money.ToString();
         }
         private void populateItems()
         {
@@ -44,6 +46,7 @@ namespace WindowsFormsApp1.VIew
                 else
                 flowLayoutPanel1.Controls.Add(formComponents[i]);
             }
+            
         }
     }
 }

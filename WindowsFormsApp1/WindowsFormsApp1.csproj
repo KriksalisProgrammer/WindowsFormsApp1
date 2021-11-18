@@ -61,7 +61,8 @@
     <Compile Include="Models\Component\IModuls.cs" />
     <Compile Include="Models\Component\Moduls.cs" />
     <Compile Include="Models\Component\Store.cs" />
-    <Compile Include="Models\Component\Upgrate.cs" />
+    <Compile Include="Models\Component\BuyControler.cs" />
+    <Compile Include="Models\Resourse.cs" />
     <Compile Include="Models\Ship.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -99,7 +99,6 @@
             this.Controls.Add(this.labelLavel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelNameComponent);
-            this.Name = "FormComponent";
             this.Size = new System.Drawing.Size(196, 296);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

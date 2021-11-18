@@ -10,6 +10,8 @@ namespace WindowsFormsApp1.Models.Component
     public class Engine: IModuls
     {
         public event EventHandler EnergyConsumption;
+        public event EventHandler isBuyEvent;
+
         public string Name { get; set; }
         public int Protect { get; set; }
         public int Price { get; set; }

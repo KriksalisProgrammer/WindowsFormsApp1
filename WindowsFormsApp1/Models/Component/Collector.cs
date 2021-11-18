@@ -28,6 +28,8 @@ namespace WindowsFormsApp1.Models.Component
 
         }
 
+        public event EventHandler isBuyEvent;
+
         public void Upgrate()
         {
             if (Level == 1)

@@ -26,6 +26,9 @@ namespace WindowsFormsApp1.Models.Component
             ImageModuls = Properties.Resources.Storage;
             MaxMineral = 2000;
         }
+
+        public event EventHandler isBuyEvent;
+
         public void Upgrate()
         {
             if (Level == 1)

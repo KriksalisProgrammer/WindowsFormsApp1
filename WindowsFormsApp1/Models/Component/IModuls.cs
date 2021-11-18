@@ -10,6 +10,7 @@ namespace WindowsFormsApp1.Models.Component
     internal interface IModuls
     {
         Image ImageModuls { get; set; }
+        event EventHandler isBuyEvent;
         string Name { get; set; }
         int Protect { get; set; }
         int Price { get; set; }
